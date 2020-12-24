@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="style_Eng.css">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style_Eng.css">
+    <title>녜휭제조기</title>
+    
+    <script>
+    var names = ["a","b","c","d","e","f","g","h","i","j","k","l","n","m","o","p","q","r","s","t","u","v","w","x","y","z","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
+
+    function nyehuing(length) {
+        var name = '';
+        for (var i = 0; i < length; i++) {
+        	name += names[Math.floor(Math.random() * 52)];
+        }
+        return name;
+    }
+		
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+        <a class="navbar-brand" href="#">★랜덤 녜힁 제조기★</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">한글 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index_Eng.html">영어</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="index_Kor_Eng.html">한글+영어</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<section class="section">
+		<h1 class="title">랜덤 녜힁 제조기(영어)</h1>
+		<h2 class="subtitle">무슨 닉네임을 할까?</h2>
+	</section>
+	<section class="opgg">
+		<div class="container mt-5 mb-5 opgg-cover d-flex flex-row-reverse"><a href="www.op.gg" class="opgg-link">op.gg로 가서 닉네임 중복 확인</a></div>
+	</section>
+	<div class="container main-box">  
+		<p id="demo" class="return-name">여기에 녜힁 출력</p>
+	
+		<button type="button" class="btn btn-outline-primary one-button" onclick='document.getElementById("demo").innerHTML = nyehuing(2)'> 2글자</button>
+
+		<button type="button" class="btn btn-outline-secondary one-button"onclick='document.getElementById("demo").innerHTML = nyehuing(3)'> 3글자</button>
+		
+		<button type="button" class="btn btn-outline-warning one-button"onclick='document.getElementById("demo").innerHTML = nyehuing(4)'> 4글자</button>
+
+		<button type="button" class="btn btn-outline-danger one-button" onclick='document.getElementById("demo").innerHTML = nyehuing(5)'> 5글자</button>
+
+		<button type="button" class="btn btn-outline-success one-button" onclick='document.getElementById("demo").innerHTML = nyehuing(6)'> 6글자</button>
+		
+		<button type="button" class="btn btn-outline-primary one-button"onclick='document.getElementById("demo").innerHTML = nyehuing(7)'> 7글자</button>
+
+		<button type="button" class="btn btn-outline-secondary one-button"onclick='document.getElementById("demo").innerHTML = nyehuing(8)'> 8글자</button>
+		
+		<button type="button" class="btn btn-outline-warning one-button"onclick='document.getElementById("demo").innerHTML = nyehuing(9)'> 9글자</button>
+
+		<button type="button" class="btn btn-outline-danger two-button"onclick='document.getElementById("demo").innerHTML = nyehuing(10)'>10글자</button>
+
+		<button type="button" class="btn btn-outline-success two-button" onclick='document.getElementById("demo").innerHTML = nyehuing(11)'>11글자</button>
+
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
